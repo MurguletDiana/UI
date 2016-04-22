@@ -1,0 +1,59 @@
+<html>
+<head>
+ <title>Endava</title>
+ <link rel="stylesheet" type="text/css" href="form.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<header>
+	<img class="img-responsive" src="endava.jpg" align="middle"class="center">
+	</header>
+ 			<nav class ="col-xs-12 inlineNav">
+				<ul class="list-inline inlineNav">
+					<li><a href="file:///C:/Users/dmurgulet/Desktop/DIANA/bootstrap-3.3.6-dist/index.html">Home</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contact</a></li>
+				<a href="https://twitter.com" ><img class="inlineNav"id="TwitterLogo"src="TwitterLogo.png"></a>
+				<a href="http://www.facebook.com/" ><img class="inlineNav"id="FacebookLogo"src="FacebookLogo.png"></a>
+				</ul>
+			</nav>
+		
+			<div class="col-xs-12">
+			<div>
+				<h3>CONTACT US</h3>
+			</div>
+			</div>
+	
+			<form class="myForm"
+			onsubmit="return validate();">
+			<input class="col-xs-4 camp1" type="text" name="Name" placeholder="Name" />
+			<input class="col-xs-4 camp1" type="text" name="Email" placeholder="Email" />
+			<input class="col-xs-4 camp1" type="text" name="Website" placeholder="Website"  />
+			<input class="col-xs-12 camp2" type="text" name="Message" placeholder="Message"  />
+			<input class="col-xs-1 btn btn-primary btn-lg"id="butonSubmit" type="submit" style="width:100%"/>
+            </div>
+			</form>
+			<script type="text/javascript">
+			
+	function validate()  
+	 {
+      
+	  var x = document.forms["myForm"]["Name"].value;
+         if( x.length == 3 )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }  
+         
+      }
+</script>
+			
+</body>

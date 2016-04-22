@@ -1,0 +1,38 @@
+body{
+	background-color:white;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #4b4b4b;
+}
+
+#header{display: table-cell;vertical-align: middle}
+
+#TwitterLogo, #FacebookLogo{
+	width:20px;
+	height:20px;
+	float:right;
+	display:inline;
+}
+	
+h3{	
+	color: grey;
+	border-bottom: 1px solid grey;
+	border-top: 1px solid grey;
+	text-align: center;
+	padding: 14px 16px;
+    text-decoration: none;
+	font-size: 20px;
+}
+
+.camp1{
+	height: 40px;
+}
+
+.camp2{
+	height:75px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+#butonSubmit{
+	float:right;
+}
